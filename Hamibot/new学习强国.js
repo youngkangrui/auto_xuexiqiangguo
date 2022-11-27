@@ -311,11 +311,7 @@ function back_track() {
                 className("android.view.ViewGroup").depth(15).waitFor();
                 sleep(random_time(delay_time));
                 log("点击:" + "android.view.ViewGroup");
-                if (text("亮点").exists()) {
-                    className("android.view.ViewGroup").depth(15).findOnce(2).child(4).click();
-                } else {
-                    className("android.view.ViewGroup").depth(15).findOnce(2).child(3).click();
-                }
+                className("android.view.ViewGroup").depth(15).findOnce(2).child(3).click();
                 break;
             case 1:
                 break;
@@ -414,11 +410,7 @@ log("等待:" + "android.view.ViewGroup");
 className("android.view.ViewGroup").depth(15).waitFor();
 sleep(random_time(delay_time));
 log("点击:" + "android.view.ViewGroup");
-if (text("亮点").exists()) {
-    className("android.view.ViewGroup").depth(15).findOnce(2).child(4).click();
-} else {
-    className("android.view.ViewGroup").depth(15).findOnce(2).child(3).click();
-}
+className("android.view.ViewGroup").depth(15).findOnce(2).child(3).click();
 
 /*
  **********本地频道*********

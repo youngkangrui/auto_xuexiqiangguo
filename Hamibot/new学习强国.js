@@ -1540,7 +1540,7 @@ if (!finish_list[7] && two_players_scored < 1) {
 /*
  **********订阅*********
  */
-while (!finish_list[8] && "no" == "yes") {
+while (!finish_list[8] && whether_complete_subscription == "yes") {
     log("订阅");
     sleep(random_time(delay_time));
     if (!className("android.view.View").depth(22).text("学习积分").exists()) back_track();
